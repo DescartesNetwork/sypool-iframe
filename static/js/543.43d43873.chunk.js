@@ -1,0 +1,2 @@
+"use strict";(globalThis.webpackChunksypool=globalThis.webpackChunksypool||[]).push([[543],{80648:(a,e,p)=>{p.r(e),p.d(e,{logo:()=>d,panels:()=>i,readme:()=>b});const s=p.p+"static/media/panel-1.82ba904700883b4d1b7e.png",c=p.p+"static/media/panel-2.9f54f97cd994b8b27218.png",d=p.p+"static/media/logo.cfb6ff2c4dfd74c6da67.png",b=p.p+"static/media/README.ff93448fef94ea73029b.md",i=[s,c]}}]);
+//# sourceMappingURL=543.43d43873.chunk.js.map
