@@ -1,3 +1,3 @@
-# My App
+# Sypool
 
-A sample project for Sentre developers
+Synthetic Asset Pools Management

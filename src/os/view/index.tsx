@@ -37,6 +37,13 @@ const View = () => {
   } = useRootSelector((state: RootState) => state)
   const dispatch = useRootDispatch<RootDispatch>()
 
+  // Debug
+  // useEffect(() => {
+  //   window.addEventListener('message', function ({ data }) {
+  //     return console.log(data)
+  //   })
+  // }, [])
+
   // Load DApp flags, registry, page
   useEffect(() => {
     ;(async () => {
@@ -57,9 +64,7 @@ const View = () => {
   useEffect(() => {
     document.body.setAttribute('id', theme)
     const DEFAULT_BG = theme === 'light' ? DEFAULT_LIGHT_BG : DEFAULT_DARK_BG
-    document.body.style.backgroundImage = `url(${
-      background[theme] || DEFAULT_BG
-    })`
+    document.body.style.background = `url(${background[theme] || DEFAULT_BG})`
   }, [theme, background])
 
   return (
