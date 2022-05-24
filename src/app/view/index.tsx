@@ -5,6 +5,7 @@ import configs from 'app/configs'
 const {
   manifest: { appId },
 } = configs
+const BACKGORUND = { light: '#1b142b', dark: '#1b142b' }
 
 const View = () => {
   return (
@@ -12,7 +13,7 @@ const View = () => {
       appId={appId}
       src="https://app.sypool.io"
       title="Sypool: Synthetic Asset Pools Management"
-      background={{ light: '#1b142b', dark: '#1b142b' }}
+      background={BACKGORUND}
     />
   )
 }
