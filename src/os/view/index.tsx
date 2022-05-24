@@ -37,13 +37,6 @@ const View = () => {
   } = useRootSelector((state: RootState) => state)
   const dispatch = useRootDispatch<RootDispatch>()
 
-  // Debug
-  // useEffect(() => {
-  //   window.addEventListener('message', function ({ data }) {
-  //     return console.log(data)
-  //   })
-  // }, [])
-
   // Load DApp flags, registry, page
   useEffect(() => {
     ;(async () => {

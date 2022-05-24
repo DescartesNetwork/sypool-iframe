@@ -1,24 +1,22 @@
-import { useLayoutEffect } from 'react'
+import { useEffect } from 'react'
+import { Gateway } from '@sentre/connector'
 
 export type EmbededViewProps = {
-  id?: string
+  appId: string
   src: string
   title: string
 }
 
-const EmbededView = ({
-  id = Math.round(Math.random() * 10 ** 8).toString(),
-  src,
-  title,
-}: EmbededViewProps) => {
-  useLayoutEffect(() => {
-    const { contentWindow } = document.getElementById(id) as HTMLIFrameElement
-    if (contentWindow) contentWindow.sentre = window.sentre
-  }, [id])
+const EmbededView = ({ appId, src, title }: EmbededViewProps) => {
+  // Setup wallet gateway
+  useEffect(() => {
+    const gateway = new Gateway(window.sentre.wallet)
+    return gateway.terminate
+  }, [])
 
   return (
     <iframe
-      id={id}
+      id={appId + '-iframe'}
       src={src}
       title={title}
       style={{

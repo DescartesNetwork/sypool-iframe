@@ -1,9 +1,16 @@
 import EmbededView from 'shared/embededView'
 
+import configs from 'app/configs'
+
+const {
+  manifest: { appId },
+} = configs
+
 const View = () => {
   return (
     <EmbededView
-      src="https://academy.sentre.io/"
+      appId={appId}
+      src="https://app.sypool.io"
       title="Sypool: Synthetic Asset Pools Management"
     />
   )
