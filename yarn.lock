@@ -1901,7 +1901,7 @@
   dependencies:
     "@solana/web3.js" "^1.43.1"
 
-"@sentre/craco-plugins@^1.0.27":
+"@sentre/craco-plugins@^1.0.31":
   version "1.0.31"
   resolved "https://registry.yarnpkg.com/@sentre/craco-plugins/-/craco-plugins-1.0.31.tgz#17844724df7ea20e62641ce6fa360315b6ac5157"
   integrity sha512-tb4dhZ04TJ6udTCXWEuWB+EpGn3tANVXZPRr/Mqy00VNlnOeZKqHEQtSagN23hXv6XS4KNm1mcj3QKW2QFpD8w==
