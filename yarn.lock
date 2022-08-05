@@ -1889,13 +1889,6 @@
   dependencies:
     react-helmet "^6.1.0"
 
-"@sentre/antd-ionicon@^1.0.36":
-  version "1.0.36"
-  resolved "https://registry.yarnpkg.com/@sentre/antd-ionicon/-/antd-ionicon-1.0.36.tgz#2776aa100470f883f49dc5342194410ab393b4b5"
-  integrity sha512-pARsl+TzfS06HvRSwDccOzCORBkJYPHj2Q5SrNcrMyZDl4OWChllcMWul7O0adWZIEO2OxNGUDG2yhacmmQNiw==
-  dependencies:
-    react-helmet "^6.1.0"
-
 "@sentre/connector@^0.0.30":
   version "0.0.30"
   resolved "https://registry.yarnpkg.com/@sentre/connector/-/connector-0.0.30.tgz#c77162b7d799e12b74d8d3b65eea465d0ffb5fcc"
