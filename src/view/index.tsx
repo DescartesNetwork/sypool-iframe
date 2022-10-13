@@ -1,5 +1,4 @@
-import { useEffect } from 'react'
-import { net, useSetBackground } from '@sentre/senhub'
+import { net } from '@sentre/senhub'
 
 import EmbededView from '@sentre/embeded-view'
 import MainnetOnly from './mainnetOnly'
@@ -11,16 +10,10 @@ const {
 } = configs
 
 const View = () => {
-  const setBackground = useSetBackground()
-
-  useEffect(() => {
-    setBackground({ light: '#1b142b', dark: '#1b142b' })
-  }, [setBackground])
-
   if (net !== 'mainnet') return <MainnetOnly />
   return (
     <EmbededView
-      wallet={window.sentre.wallet}
+      wallet={window.sentre.solana}
       appId={appId}
       src="https://app.sypool.io"
       title="Sypool: Synthetic Asset Pools Management"
