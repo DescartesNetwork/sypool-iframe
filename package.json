@@ -3,8 +3,8 @@
   "version": "2.2.2",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.0",
-    "@sentre/embeded-view": "^1.0.43",
-    "@sentre/senhub": "^3.2.20",
+    "@sentre/embeded-view": "^2.0.2",
+    "@sentre/senhub": "^4.1.2",
     "antd": "^4.21.1",
     "bn.js": "^5.2.0",
     "react": "^17.0.2",
